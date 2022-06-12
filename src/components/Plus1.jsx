@@ -20,6 +20,7 @@ class Plus1 extends Component {
     if (this.props.counter !== prevProps.counter) {
       this.setState({ newCounter: this.props.counter * 2 });
     }
+
     console.log(prevProps);
     console.log(prevState);
     console.log(snapshot);

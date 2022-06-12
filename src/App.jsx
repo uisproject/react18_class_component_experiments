@@ -1,5 +1,7 @@
 import { Component } from "react";
 import Plus1 from "./components/Plus1";
+import Plus2 from "./components/Plus2";
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -33,6 +35,7 @@ class App extends Component {
         <h1>Counter: {this.state.counter}</h1>
         <button onClick={this.handleClick}>Hi</button>
         <Plus1 counter={this.state.counter} />
+        <Plus2 counter={this.state.counter} />
       </>
     );
   }
