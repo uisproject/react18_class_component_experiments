@@ -1,4 +1,4 @@
-# Project Title
+# Template Simplified React18
 
 Minified React18, you can do a lot of things here to test the react feature so you won't need to install 250mb for react creativity
 
