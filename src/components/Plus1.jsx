@@ -10,13 +10,16 @@ class Plus1 extends Component {
   }
 
   static getDerivedStateFromProps(props, state) {
-    props = props.counter * -1;
+    console.log(props);
     console.log(state);
 
     return { x: "test" };
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
+    if (this.props.counter !== prevProps.counter) {
+      this.setState({ newCounter: this.props.counter * 2 });
+    }
     console.log(prevProps);
     console.log(prevState);
     console.log(snapshot);
